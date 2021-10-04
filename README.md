@@ -1,6 +1,7 @@
 `Install`
 
 git clone git@github.com:Tripsy/splash.git
+
 Modify .env file.
 
 `Notes`
