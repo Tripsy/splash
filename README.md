@@ -1,32 +1,9 @@
-Build steps
-
-composer create-project laravel/laravel splash/
-composer install
-
-    composer require laravel/telescope
-    php artisan telescope:install
-    php artisan migrate
-
-php artisan serve --port=80
-
-    php artisan make:controller CommercialController --resource --model=Commercial
-    php artisan make:controller CategoryController --resource --model=Category
-
-Debugging
-
-http://local.test/telescope
-
-Details
-
-Laravel v8.62.0
-PHP v7.4.20
-MySql 5.5.5-10.6.4-MariaDB-1:10.6.4+maria~focal
-
-Install
+`Install`
 
 git clone git@github.com:Tripsy/splash.git
+Modify .env file.
 
-Notes
+`Notes`
 
 I'm using a database setup as a docker container -> docker-compose.yml :::
 
@@ -50,4 +27,28 @@ networks:
     default:
         name: local-coding
 ```
-        
+
+`Build steps`
+
+composer create-project laravel/laravel splash/
+composer install
+
+    composer require laravel/telescope
+    php artisan telescope:install
+    php artisan migrate
+
+php artisan serve --port=80
+
+    php artisan make:controller CommercialController --resource --model=Commercial
+    php artisan make:controller CategoryController --resource --model=Category
+
+`Debugging`
+
+http://local.test/telescope
+
+`Details`
+
+Laravel v8.62.0
+PHP v7.4.20
+MySql 5.5.5-10.6.4-MariaDB-1:10.6.4+maria~focal
+
