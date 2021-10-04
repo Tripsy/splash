@@ -30,6 +30,7 @@ Notes
 
 I'm using a database setup as a docker container -> docker-compose.yml :::
 
+[code]
 version: '3.7'
 services:
     mysql:
@@ -48,4 +49,5 @@ services:
 networks:
     default:
         name: local-coding
+[/code]
         
