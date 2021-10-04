@@ -16,7 +16,7 @@ class CreateCategoryTable extends Migration
         Schema::create('category', function (Blueprint $table) {
             $table->id()->unsigned();
             $table->string('name');
-            $table->unsignedBigInteger('parent_id');
+            $table->unsignedBigInteger('parent_id')->nullable();
             $table->index('parent_id');
             $table->dateTime('created_at');
             $table->dateTime('updated_at')->nullable();
